@@ -14,12 +14,9 @@ import lombok.NoArgsConstructor;
 public class CuentaDto {
     private int id;
     private String numero;
-
     @NotNull(message = "El tipo no puede ser nulo") //Code challenge
-    @Pattern(regexp = ".\'d", message = "El tipo debe ser Ahorro o Corriente") //Code challenge
     @NotBlank(message = "El valor no puede ser vacio")
     private String tipo;
     private Boolean estado; // activo/desactivo
-
     private int clienteId;
 }
