@@ -101,7 +101,7 @@ class ClienteServiceTest {
     void buscarClientesPorApellido() {
         List<Cliente> cliente =  clienteService.buscarClientesPorApellido("PEREZ");
         assertFalse(cliente.isEmpty());
-        assertEquals("PEREZ", cliente.get(0).getApellidos());
+        assertEquals("PEREZ", cliente.get(0).getApellido());
     }
 
     /*@Test
