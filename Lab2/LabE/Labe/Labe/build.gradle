@@ -61,6 +61,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
 	implementation 'wsdl4j:wsdl4j'
+	implementation 'org.springframework.boot:spring-boot-starter-artemis'
+	implementation 'org.apache.activemq:artemis-jakarta-server'
+	implementation 'org.springframework.boot:spring-boot-starter-integration'
 	jaxb("org.glassfish.jaxb:jaxb-xjc")
 
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
